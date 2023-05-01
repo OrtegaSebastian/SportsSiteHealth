@@ -54,3 +54,26 @@ function scrollToSection(sectionId) {
   const section = document.querySelector(sectionId);
   section.scrollIntoView({ behavior: 'smooth', duration: 2000 });
 }
+// Get a reference to the "Explore" button
+const exploreButton = document.querySelector('#explore-btn');
+
+// Add a click event listener to the "Explore" button
+exploreButton.addEventListener('click', function() {
+  // Get a reference to the input field where the user types their search query
+  const searchInput = document.querySelector('#search-input');
+
+  // Get the user's search query
+  const searchQuery = searchInput.value;
+
+  // Perform some validation on the user's search query
+  if (!searchQuery) {
+    alert('Please enter a search query.');
+    return;
+  }
+
+  // Construct the URL for the search results page
+  const searchResultsUrl = `https://example.com/search?q=${encodeURIComponent(searchQuery)}`;
+
+  // Open the search results page in a new window
+  window.open(searchResultsUrl, '_blank');
+});

@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="bg-dark text-white">
-      <h1 class="my-3">Get Moving!</h1>
+      <h1 class="my-3" style="text-align: center;">Get Moving!</h1>
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,15 +35,15 @@
           </div>
         </div>
       </nav>
-    </header>
-    
+    </header> 
     
     <main>
       <section class="hero">
         <h2>Stay Active, Stay Healthy</h2>
         <p>Join our community of active individuals and find your favorite sport.</p>
-        <button>Explore</button>
+        <button id="explore-btn">Explore</button>
       </section>
+      
       <section class="sports-gallery">
         <h2>Popular Sports</h2>
         <div class="carousel-container">
@@ -87,8 +87,84 @@
           </div>
         </div>
       </section>
+      <section id="activities-section" class="section activities">
+        <div class="container">
+          <h2 class="text-center my-5">Activities</h2>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="./images/running.jpg" alt="Running">
+                <div class="card-body">
+                  <h4 class="card-title">Running</h4>
+                  <p class="card-text">Running is a popular form of exercise that is known to improve cardiovascular health, reduce stress, and promote weight loss.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="./images/cycling.jpg" alt="Cycling">
+                <div class="card-body">
+                  
+                  <h4 class="card-title">Cycling</h4>
+                  <p class="card-text">Cycling is a low-impact activity that is great for building endurance, toning muscles, and improving joint mobility.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img src="./images/swimming.jpg" alt="Swimming">
+                <div class="card-body">
+                  <h4 class="card-title">Swimming</h4>
+                  <p class="card-text">Swimming is a full-body workout that can help improve muscle strength, endurance, and cardiovascular health.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials-section" class="section testimonials">
+        <div class="container">
+          <h2 class="text-center my-5">Testimonials</h2>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <div class="testimonial">
+                <img src="./images/basket_happy.jpg" alt="Testimonial 1" class="testimonial-image rounded-circle">
+                <p class="testimonial-description">"I absolutely love the basketball program at Get Moving! The coaches are incredibly knowledgeable and encouraging, and I always feel challenged and supported during my workouts."</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="testimonial">
+                <img src="./images/yoga_happy.jpg" alt="Testimonial 2" class="testimonial-image rounded-circle">
+                <p class="testimonial-description">"Yoga has been a lifesaver for me, and Get Moving! has some of the best instructors I've ever had. They are patient, kind, and make every class feel like a calming escape."</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="testimonial">
+                <img src="./images/swimming_happy.jpg" alt="Testimonial 3" class="testimonial-image rounded-circle">
+                <p class="testimonial-description">"Swimming is my favorite form of exercise, and the facilities at Get Moving! are top-notch. The water is always clean and warm, and the staff is incredibly helpful and friendly."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
     </main>
   </body>
+  <footer>
+    <div class="social-links">
+      <a href="#"><i class="fa fa-facebook">Facebook</i></a>
+      <a href="#"><i class="fa fa-twitter">Twitter</i></a>
+      <a href="#"><i class="fa fa-instagram">Instagram</i></a>
+      <a href="#"><i class="fa fa-linkedin">Linkedin</i></a>
+    </div>
+    <p>&copy; 2023 Example Company. All Rights Reserved.</p>
+  </footer>
+  
+  
 </html>
 
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

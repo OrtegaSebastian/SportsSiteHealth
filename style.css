@@ -79,8 +79,11 @@ main {
 }
 
 .sports-gallery {
-  margin-top: 100px;
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 50px 0;
 }
+
 
 .sports-gallery h2 {
   text-align: center;
@@ -236,6 +239,54 @@ main {
   transform: scale(1.2);
 }
 
+footer {
+  text-align: center;
+  position: relative;
+}
+
+.social-links {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.social-links a {
+  color: #333;
+  display: inline-block;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+
+.fa {
+  font-size: inherit;
+  margin-right: 5px;
+}
+
+.testimonial {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.testimonial:hover .testimonial-image {
+  transform: scale(1.1);
+}
+
+.testimonial-image {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 
 /* Media queries for smaller screens */
 @media screen and (max-width: 768px) {
